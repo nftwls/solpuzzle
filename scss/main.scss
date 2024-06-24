@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Nunito:wght@400;600&display=swap');
+$template_width:1440;
+@function vw($n) {
+    @return $n * 100vw / $template_width;
+}
+$template_mobile_width:360;
+@function vwm($n) {
+    @return $n * 100vw / $template_mobile_width;
+}
+*{
+    margin: 0px;
+    padding: 0px;
+}
+html,body{
+    overflow: hidden;
+    overflow-y: auto;
+}
+body::-webkit-scrollbar{
+    -webkit-appearance: none;
+    display: none;
+}
+body{
+    position: relative;
+    font-family: Montserrat;
+    font-weight: normal;
+    font-size: 1.6667vw;
+    overflow-x:hidden;
+    color:white;
+}
+.flex{
+    display: flex;
+}
+.between{
+    display: flex;
+    justify-content: space-between;
+}
+.around{
+    display: flex;
+    justify-content: space-around;
+}
+.left{
+    display: flex;
+    justify-content: left;
+}
+.right{
+    display: flex;
+    justify-content: right;
+}
+.center{
+    display: flex;
+    justify-content: center;
+}
+.acenter{
+    display: flex;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.title{
+    font:{
+        weight: 600;
+        size: vw(48);
+    }
+}
+img {
+    user-drag: none;
+}
+@media only screen and (max-width: 600px){
+    body{
+        font-size: vwm(16);
+    }
+    .title{
+        font:{
+            size: vwm(24);
+        }
+    }
+}

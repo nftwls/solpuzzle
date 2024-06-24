@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="img/solana.png">
+    <link rel="stylesheet" href="css/main.css?v=7">
+    <link rel="stylesheet" href="css/solana.css?v=9">
+    <title>Solana Bullz</title>
+</head>
+<body>
+    <div id="app">
+        <div class="block1">
+            <div class="container">
+                <nav >
+                    <div class="between">
+                        <a class="nav-link acenter" href="#">
+                            <img src="img/solana.png" class="icon">
+                            <span class="name">Solana Bullz</span>
+                        </a>
+                        <div class="between hrefs acenter">
+                            <a href="#about" class="nav-link">About</a>
+                            <a href="#shcs" class="nav-link">Showcase</a>
+                            <a href="#roadMap" class="nav-link">Roadmap</a>
+                            <a href="#ourteam" class="nav-link">Team</a>
+                            <a href="#FAQ" class="nav-link">Faq</a>
+                        </div>
+                        <div class="contact">
+                            <a href="https://discord.gg/7M6AXesjVg" target="_blank" ><img src="./img/discordIc.png" alt="" class="ic1"></a>
+                            <a href="https://www.twitter.com/bullzsolana" target="_blank"><img src="./img/twiter.png" alt=""></a>
+                        </div>
+                    </div>
+                </nav>
+                <div class="flex disp">
+                    <div class="about">
+                        <div class="bl1">
+                            Welcome<br>
+                            to Solana Bullz
+                        </div>
+                        <div class="bl2">
+                            1500 unique Bullz are grazing
+                            in the Solana field. Each element has been drawn by hand
+                            and assembled with a code
+                        </div>
+                        <div class="bl3">
+                            <a href="https://discord.gg/7M6AXesjVg" target="_blank"><img src="./img/discord.png" class="dis"></a>
+                            <a href="https://www.twitter.com/bullzsolana" target="_blank"><img src="./img/twiter.png" class="tw" alt=""></a>
+                        </div>
+                    </div>
+                    <div class="show">
+                        <img src="img/circle.png" alt="" class="circle">
+                        <img :src="picName" alt="" class="sneakPic">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block2" id="about">
+            <div class="container">
+                <div class="center coming">
+                    <img src="./img/coming.png" alt="" id="toMint">
+                </div>
+                <div class="center">
+                    <div class="between timer" id="timer">
+                        <div >
+                            <div class="box">{{d}}</div>
+                            <div class="desc">Days</div>
+                        </div>
+                        <div>
+                            <div class="box">{{h}}</div>
+                            <div class="desc">Hours</div>
+                        </div>
+                        <div>
+                            <div class="box">{{m}}</div>
+                            <div class="desc">Minutes</div>
+                        </div>
+                        <div>
+                            <div class="box">{{s}}</div>
+                            <div class="desc">Seconds</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text text1">
+                    At the end of the bull year, our team developed 1500 NTF.<br>
+                    Like everybody, all NTFs are unique and have their own rarity. Perhaps during <br>
+                    the MINT you will come across such a NTF in which you can find yourself.<br>
+                </div>
+                <div class="text text2">
+                    Like many people, we love animals very much and want to help them, but<br>
+                    without you we won’t be able to cope with it. So let's do it together!
+                </div>
+            </div>
+        </div>
+        <div class="block3">
+            <div class="benefits" :style="{left:scroll+'px'}">
+                <div class="benefit">
+                    <div class="name">1500</div>
+                    <div class="dis">1500 is the total supply on the Solana blockchain</div>
+                </div>
+                <div class="benefit">
+                    <div class="name">100+</div>
+                    <div class="dis">100+ hand-drawn unique traits</div>
+                </div>
+                <div class="benefit">
+                    <div class="name">0.5 SOL</div>
+                    <div class="dis">Minting price is 0.5 SOL</div>
+                </div>
+                <div class="benefit">
+                    <div class="name">Listing</div>
+                    <div class="dis">After minting Solna Bullz will be tradable on the secondary marketplaces</div>
+                </div>
+                <div class="benefit">
+                    <div class="name">IP rights</div>
+                    <div class="dis">Owner owns all the commercial rights of the Solana Bull</div>
+                </div>
+                <div class="benefit">
+                    <div class="name">Exclusive</div>
+                    <div class="dis">Exclusive access and rewards are available only to holders</div>
+                </div>
+                <div class="benefit">
+                    <div class="name">500 pre-sales</div>
+                    <div class="dis">The 500 pre-sales’ revenue will go to charity</div>
+                </div>
+                <div class="benefit">
+                    <div class="name">10%</div>
+                    <div class="dis">And 10% of the revenue from public sales will also be donated to charity organizations</div>
+                </div>
+            </div>
+            <div class="container" id="showcase">
+                <div class="title showcase" >Showcase <span id="shcs"></span></div>
+                <div class="btns">
+                    <img src="./img/left.png" alt="" class="btn" @tab="prev" @click="prev">
+                    <img src="./img/right.png" alt="" class="btn" @tab="next" @click="next">
+                </div>
+            </div>
+            <div class="carousel between">
+                <div><img src="./img/left.png" alt="" class="btn" @click="prev"></div>
+                <div class="between imgs">
+                    <img v-for="i in pics" :src="`./img/${i}.png`">
+                </div>
+                <div><img src="./img/right.png" alt="" class="btn" @click="next"></div>
+            </div>
+        </div>
+        <div class="block4">
+            <div class="container">
+                <div id="roadMap" class="title">Roadmap</div>
+            </div>
+            <div class="box box1">Chinese calendar inspired us to create the concept of 1500 Solana Bullz. The founders have built a team of a talented artist and qualified developers to bring this project to life</div>
+            <div class="box box2">To let 1500 Solana Bullz out of the pen</div>
+            <div class="box box3">Inclusion in the major marketplaces such as Solanart and MagicEden</div>
+            <div class="box box4">30% of all royalties will go<br>
+                to holders, 30% will go<br>
+                to charities, 30% will go<br>
+                to the community wallet. The community will be able to decide how to spend that money</div>
+            <div class="box box5">3% of the revenue from public sales will be randomly contested among 3 holders</div>
+            <div class="box box6">Creation of a new collection, which refers to the animal<br>
+                of the next year (tiger),wil be drawn in 3D</div>
+        </div>
+        <div class="block5">
+            <div class="container">
+                <div class="title" id="ourteam">Our team</div>
+                <div class="cards">
+                    <div class="card"><img src="./img/av1.jpg" alt="">
+                        <div class="text1">Co-Founder</div>
+                        <div class="text2">OkdoK</div>
+                    </div>
+                    <div class="card"><img src="./img/av2.jpg" alt="">
+                        <div class="text1">Co-Founder</div>
+                        <div class="text2">YanisX</div>
+                    </div>
+                    <div class="card"><img src="./img/av3.jpg" alt="">
+                        <div class="text1">Marketing</div>
+                        <div class="text2">PucPuc</div>
+                    </div>
+                    <div class="card"><img src="./img/av4.jpg" alt="">
+                        <div class="text1">Artist</div>
+                        <div class="text2">Ronya</div>
+                    </div>
+                    <div class="card"><img src="./img/av5.jpg" alt="">
+                        <div class="text1">Developer</div>
+                        <div class="text2">ProgBuull</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block6">
+            <div class="container">
+                <div id="FAQ" class="title">FAQ</div>
+                <div class="cards">
+                    <div class="card" @click="open(0)">
+                        <div>
+                            <div class="quest">How many Solana Bulls are there in total?</div>
+                            <div class="ans" v-if="faq==0" >There will be 1500 NFTs in total</div>
+                        </div>
+                        <div ><img src="./img/down.png" alt="" :class="{open:faq==0}"></div>
+                    </div>
+                    <div class="card" @click="open(1)">
+                        <div>
+                            <div class="quest">What’s the minting cost?</div>
+                            <div class="ans" v-if="faq==1">The minting cost is 0.5 SOL</div>
+                        </div>
+                        <div ><img src="./img/down.png" alt="" :class="{open:faq==1}"></div>
+                    </div>
+                    <div class="card" @click="open(2)">
+                        <div>
+                            <div class="quest">When is the launch date planned? </div>
+                            <div class="ans" v-if="faq==2">The launch date is scheduled for 2021.11.13 8 pm UTC</div>
+                        </div>
+                        <div ><img src="./img/down.png" alt="" :class="{open:faq==2}"></div>
+                    </div>
+                    <div class="card" @click="open(3)">
+                        <div>
+                            <div class="quest">Will it be possible to get more than 0.5 SOLana Bulls NFT?</div>
+                            <div class="ans" v-if="faq==3">You can try it!</div>
+                        </div>
+                        <div ><img src="./img/down.png" alt="" :class="{open:faq==3}"></div>
+                    </div>
+                    <div class="card" @click="open(4)">
+                        <div>
+                            <div class="quest">Which wallet will be available?</div>
+                            <div class="ans" v-if="faq==4">You will be able to mint Solana Bulls with the help of Phantom, we recommend this particular wallet.</div>
+                        </div>
+                        <div ><img src="./img/down.png" alt="" :class="{open:faq==4}"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="block7" :style='{"background-image":`url(${back})`}'>
+            <div class="text" >
+                <a @mouseover="back2" @mouseleave="back1" href="https://discord.gg/7M6AXesjVg" target="_blank">
+                    Solana Bullz
+                </a>
+            </div>
+            <div class="container">
+                <div class="end">© 2021 Solana Bullz is Proudly Powered by Solana.</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/vue.min.js"></script>
+    <script src="js/main-dist.js?v=6"></script>
+
+</body>
+
+</html>

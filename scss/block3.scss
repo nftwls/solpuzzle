@@ -1,0 +1,142 @@
+$template_width:1440;
+@function vw($n) {
+  @return $n * 100vw / $template_width;
+}
+$template_mobile_width:360;
+@function vwm($n) {
+  @return $n * 100vw / $template_mobile_width;
+}
+.block3 {
+  background-image: url("../img/fone3.jpg");
+  background-size: cover;
+  height: vw(990);
+  .benefits{
+    position: absolute;
+    display: flex;
+    left:vw(128);
+    &::-webkit-scrollbar{
+      display: none;
+    }
+  }
+  .benefit{
+    border-radius: vw(24);
+    background: #413B54;
+    width: vw(360);
+    height: vw(272);
+    margin-right: vw(24);
+    box-sizing: border-box;
+    padding: {
+      top:vw(56);
+      left:vw(32);
+      right: vw(36);
+    };
+    .name{
+      font:{
+        weight: 600;
+        size: vw(28);
+      }
+    }
+    .dis{
+      margin-top: vw(20);
+      font:{
+        size: vw(24);
+        weight: 400;
+      }
+    }
+  }
+  .showcase{
+    padding-top: vw(372);
+  }
+  .carousel{
+    padding: vw(60) vw(44);
+    .btn{
+      width: vw(76);
+      height: vw(76);
+      margin-top: vw(172);
+      cursor: pointer;
+    }
+    .imgs{
+      width: vw(1120);
+      img{
+        width: vw(360);
+        height: vw(360);
+        border-radius: vw(24);
+      }
+    }
+  }
+  .btns{
+    display: none;
+  }
+}
+@media only screen and  (max-width: 600px) {
+  .block3 {
+    background-image: url("../img/fone3m.jpg");
+    background-size: cover;
+    height: vwm(554);
+    .benefits{
+      margin-left: vwm(16);
+      width: vwm(328);
+      overflow-x: scroll;
+      overflow-y: hidden;
+      display: -webkit-box;
+
+    }
+    .benefit{
+      border-radius: vwm(6);
+      width: vwm(156)!important;
+      box-sizing: content-box;
+      height: vwm(170);
+      margin-right: vw(16);
+      padding: {
+        top:vwm(16);
+        left:vwm(16);
+        right: vwm(4);
+      };
+      .name{
+        font:{
+          size: vwm(16);
+        }
+      }
+      .dis{
+        margin-top: vwm(8);
+        font:{
+          size: vwm(14);
+        }
+      }
+    }
+    .showcase{
+      padding-top: 0px;
+    }
+    #showcase{
+      padding-top: vwm(260);
+      display: flex;
+      justify-content: space-between;
+      .btns{
+        display: block!important;
+        .btn{
+          width: vwm(40);
+          height: vwm(40);
+          cursor: pointer;
+        }
+      }
+    }
+    .carousel{
+      padding: 0px;
+      padding-top: vwm(24);
+      .btn {
+        display: none;
+      }
+      .imgs{
+        width: vwm(328);
+        img{
+          width: vwm(156);
+          height: vwm(156);
+          border-radius: vwm(12);
+          &:nth-child(3){
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}

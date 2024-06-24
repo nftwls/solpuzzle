@@ -1,0 +1,77 @@
+$template_width:1440;
+@function vw($n) {
+  @return $n * 100vw / $template_width;
+}
+$template_mobile_width:360;
+@function vwm($n) {
+  @return $n * 100vw / $template_mobile_width;
+}
+.block4 {
+  background-image: url("../img/fone4.jpg");
+  background-size: cover;
+  height: vw(1718);
+  #roadMap{
+    padding-top: vw(36);
+    position: absolute;
+  }
+  .box{
+    background: #413B54;
+    border-radius: vw(26);
+    padding: vw(36) vw(44);
+    width: vw(438);
+    position: absolute;
+    box-sizing: border-box;
+    font:{
+      size: vw(24);
+      height: 125%;
+    }
+  }
+  .box1{
+    left: vw(158);
+    margin-top: vw(195);
+  }
+  .box2{
+    left: vw(830);
+    margin-top: vw(349);
+  }
+  .box3{
+    left: vw(158);
+    margin-top: vw(602);
+  }
+  .box4{
+    left: vw(830);
+    margin-top: vw(692);
+  }
+  .box5{
+    left: vw(158);
+    margin-top: vw(1134);
+  }
+  .box6{
+    left: vw(830);
+    margin-top: vw(1453);
+  }
+}
+@media only screen and  (max-width: 600px) {
+  .block4 {
+    background-image: url("../img/fone4m.jpg");
+    height: vwm(883);
+    #roadMap{
+      padding-top: vwm(20);
+      position: static;
+    }
+    .box{
+      background: #413B54;
+      border-radius: vwm(10);
+      margin-left: vwm(16);
+      padding: vwm(12) vwm(15) vwm(24) vwm(19);
+      width: vwm(231);
+      position: static;
+      box-sizing: border-box;
+      margin-top: vwm(16)!important;
+      font:{
+        size: vwm(14);
+        height: 125%;
+      }
+    }
+  }
+}

@@ -1,0 +1,47 @@
+$template_width:1440;
+@function vw($n) {
+  @return $n * 100vw / $template_width;
+}
+$template_mobile_width:360;
+@function vwm($n) {
+  @return $n * 100vw / $template_mobile_width;
+}
+.block7 {
+  background-image: url("../img/fone7.jpg");
+  background-size: cover;
+  height: vw(930);
+  transition: 2s;
+  .text{
+    text-align: center;
+    padding-top: vw(429);
+    font:{
+      weight: 600;
+      size:vw(66);
+    }
+  }
+  .end{
+    margin-top: vw(365);
+    font:{
+      weight: 600;
+      size:vw(28);
+    }
+  }
+}
+@media only screen and  (max-width: 600px) {
+  .block7 {
+    background-image: url("../img/fone7m.jpg");
+    height: vwm(232.2);
+    .text{
+      padding-top: vwm(102);
+      font:{
+        size:vwm(24);
+      }
+    }
+    .end{
+      margin-top: vwm(73);
+      font:{
+        size:vwm(12);
+      }
+    }
+  }
+}

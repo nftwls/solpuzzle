@@ -1,0 +1,744 @@
+.block1 {
+  background-image: url("../img/fone1.jpg");
+  background-size: cover;
+  height: 62.5vw;
+}
+
+.container {
+  margin: 0px auto;
+  width: 78.3333333333vw;
+}
+
+nav {
+  padding-top: 1.3888888889vw;
+}
+nav .nav-link {
+  text-decoration: none;
+  color: white;
+}
+nav .icon {
+  width: 2.7777777778vw;
+}
+nav .name {
+  margin-left: 0.8333333333vw;
+  font-size: 1.6666666667vw;
+}
+nav .contact img {
+  width: 2.7777777778vw;
+}
+nav .hrefs {
+  height: 2.7777777778vw;
+  width: 41.1111111111vw;
+  font-weight: 500;
+  font-size: 1.3888888889vw;
+}
+nav .ic1 {
+  margin-right: 1.3888888889vw;
+}
+
+@-webkit-keyframes opacity {
+  0% {
+    -webkit-filter: opacity(0);
+            filter: opacity(0);
+  }
+  50% {
+    -webkit-filter: opacity(1);
+            filter: opacity(1);
+  }
+  90% {
+    -webkit-filter: opacity(0);
+            filter: opacity(0);
+  }
+  100% {
+    -webkit-filter: opacity(0);
+            filter: opacity(0);
+  }
+}
+
+@keyframes opacity {
+  0% {
+    -webkit-filter: opacity(0);
+            filter: opacity(0);
+  }
+  50% {
+    -webkit-filter: opacity(1);
+            filter: opacity(1);
+  }
+  90% {
+    -webkit-filter: opacity(0);
+            filter: opacity(0);
+  }
+  100% {
+    -webkit-filter: opacity(0);
+            filter: opacity(0);
+  }
+}
+@-webkit-keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  50% {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+.circle {
+  width: 50.2777777778vw;
+  -webkit-animation-name: rotate, opacity;
+          animation-name: rotate, opacity;
+  pointer-events: none;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  position: absolute;
+  -webkit-animation-delay: 0.35s;
+          animation-delay: 0.35s;
+}
+
+.sneakPic {
+  width: 24.8611111111vw;
+  border-radius: 1.6666666667vw;
+  -webkit-animation-name: opacity;
+          animation-name: opacity;
+  margin-top: 12.5vw;
+  margin-left: 13.1944444444vw;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  position: absolute;
+  -webkit-animation-delay: 0.35s;
+          animation-delay: 0.35s;
+}
+
+.about {
+  margin-top: 13.8888888889vw;
+  color: white;
+}
+.about .bl1 {
+  width: 36.1111111111vw;
+  font-weight: 600;
+  font-size: 4.5833333333vw;
+  line-height: 5vw;
+}
+.about .bl2 {
+  width: 32.6388888889vw;
+  margin-top: 1.6666666667vw;
+  font-size: 1.9444444444vw;
+  line-height: 2.2222222222vw;
+}
+.about .bl3 {
+  margin-top: 3.0555555556vw;
+}
+.about .bl3 .dis {
+  width: 18.3333333333vw;
+  content: url("../img/discord.png");
+}
+.about .bl3 .dis:hover {
+  content: url("../img/discordH.png");
+}
+.about .bl3 .tw {
+  width: 4.4444444444vw;
+  content: url("../img/twiter.png");
+  margin-left: 1.6666666667vw;
+}
+.about .bl3 .tw:hover {
+  content: url("../img/twiterH.png");
+}
+
+@media only screen and (max-width: 600px) {
+  .block1 {
+    background-image: url("../img/fone1m.jpg");
+    height: 223.6111111111vw;
+  }
+  .block1 nav {
+    padding-top: 2.7777777778vw;
+  }
+  .block1 nav .icon {
+    width: 8.8888888889vw;
+  }
+  .block1 nav .name {
+    margin-left: 2.7777777778vw;
+  }
+  .block1 nav .contact img {
+    width: 6.6666666667vw;
+  }
+  .block1 nav .hrefs {
+    display: none;
+  }
+  .block1 nav .ic1 {
+    margin-right: 1.1111111111vw;
+  }
+  .block1 .name {
+    font-size: 4.4444444444vw;
+  }
+  .block1 .circle {
+    width: 88.8888888889vw;
+  }
+  .block1 .sneakPic {
+    width: 44.4444444444vw;
+    border-radius: 3.0555555556vw;
+    margin-top: 22.2222222222vw;
+    margin-left: 22.2222222222vw;
+  }
+  .block1 .disp {
+    display: block !important;
+  }
+  .block1 .show {
+    margin-top: 15.8333333333vw;
+  }
+  .block1 .about {
+    margin-top: 18.8888888889vw;
+    color: white;
+  }
+  .block1 .about .bl1 {
+    width: inherit;
+    text-align: center;
+    font-size: 11.6666666667vw;
+    line-height: 12.2222222222vw;
+  }
+  .block1 .about .bl2 {
+    width: inherit;
+    text-align: center;
+    margin-top: 4.4444444444vw;
+    font-size: 5.6666666667vw;
+    line-height: 6.1111111111vw;
+  }
+  .block1 .about .bl3 {
+    margin-top: 13.0555555556vw;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .block1 .about .bl3 .dis {
+    width: 31.1111111111vw;
+    content: url("../img/discordm.png");
+  }
+  .block1 .about .bl3 .tw {
+    width: 10vw;
+    content: url("../img/twiterm.png");
+    margin-left: 3.3333333333vw;
+  }
+
+  .container {
+    margin: 0px auto;
+    width: 91.1111111111vw;
+  }
+}
+.block2 {
+  background-image: url("../img/fone2.jpg");
+  background-size: cover;
+  height: 72.9861111111vw;
+}
+.block2 .coming {
+  padding-top: 6.25vw;
+}
+.block2 .coming img {
+  width: 20.8333333333vw;
+}
+.block2 .timer {
+  margin-top: 2.5vw;
+  width: 44.1666666667vw;
+  text-align: center;
+}
+.block2 .timer .box {
+  border-radius: 2.7777777778vw;
+  background-color: #413B54;
+  width: 9.1666666667vw;
+  height: 9.1666666667vw;
+  padding-top: 1.7361111111vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  vertical-align: middle;
+  font-family: Nunito;
+  font-weight: 600;
+  font-size: 4.5833333333vw;
+}
+.block2 .timer .desc {
+  margin-top: 0.6944444444vw;
+  font-size: 1.6666666667vw;
+  font-weight: 400;
+  line-height: 2.0833333333vw;
+}
+.block2 .text {
+  text-align: center;
+  font-size: 1.9444444444vw;
+  font-weight: 600;
+}
+.block2 .text1 {
+  margin-top: 5.5555555556vw;
+}
+.block2 .text2 {
+  margin-top: 2.5vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .block2 {
+    background-image: url("../img/fone2m.jpg");
+    height: 147.2222222222vw;
+  }
+  .block2 .coming {
+    padding-top: 6.9444444444vw;
+  }
+  .block2 .coming img {
+    width: 33.3333333333vw;
+  }
+  .block2 .timer {
+    margin-top: 5vw;
+    width: 69.4444444444vw;
+  }
+  .block2 .timer .box {
+    border-radius: 3.0555555556vw;
+    width: 13.3333333333vw;
+    height: 13.3333333333vw;
+    padding-top: 2.7777777778vw;
+    font-size: 7.7777777778vw;
+  }
+  .block2 .timer .desc {
+    margin-top: 2.2222222222vw;
+    font-size: 3.8888888889vw;
+    line-height: 125%;
+  }
+  .block2 .timer > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .block2 .text {
+    font-size: 4.4444444444vw;
+  }
+  .block2 .text1 {
+    margin-top: 13.0555555556vw;
+  }
+  .block2 .text2 {
+    margin-top: 4.4444444444vw;
+  }
+}
+.block3 {
+  background-image: url("../img/fone3.jpg");
+  background-size: cover;
+  height: 68.75vw;
+}
+.block3 .benefits {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: 8.8888888889vw;
+}
+.block3 .benefits::-webkit-scrollbar {
+  display: none;
+}
+.block3 .benefit {
+  border-radius: 1.6666666667vw;
+  background: #413B54;
+  width: 25vw;
+  height: 18.8888888889vw;
+  margin-right: 1.6666666667vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding-top: 3.8888888889vw;
+  padding-left: 2.2222222222vw;
+  padding-right: 2.5vw;
+}
+.block3 .benefit .name {
+  font-weight: 600;
+  font-size: 1.9444444444vw;
+}
+.block3 .benefit .dis {
+  margin-top: 1.3888888889vw;
+  font-size: 1.6666666667vw;
+  font-weight: 400;
+}
+.block3 .showcase {
+  padding-top: 25.8333333333vw;
+}
+.block3 .carousel {
+  padding: 4.1666666667vw 3.0555555556vw;
+}
+.block3 .carousel .btn {
+  width: 5.2777777778vw;
+  height: 5.2777777778vw;
+  margin-top: 11.9444444444vw;
+  cursor: pointer;
+}
+.block3 .carousel .imgs {
+  width: 77.7777777778vw;
+}
+.block3 .carousel .imgs img {
+  width: 25vw;
+  height: 25vw;
+  border-radius: 1.6666666667vw;
+}
+.block3 .btns {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .block3 {
+    background-image: url("../img/fone3m.jpg");
+    background-size: cover;
+    height: 153.8888888889vw;
+  }
+  .block3 .benefits {
+    margin-left: 4.4444444444vw;
+    width: 91.1111111111vw;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    display: -webkit-box;
+  }
+  .block3 .benefit {
+    border-radius: 1.6666666667vw;
+    width: 43.3333333333vw !important;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box;
+    height: 47.2222222222vw;
+    margin-right: 1.1111111111vw;
+    padding-top: 4.4444444444vw;
+    padding-left: 4.4444444444vw;
+    padding-right: 1.1111111111vw;
+  }
+  .block3 .benefit .name {
+    font-size: 4.4444444444vw;
+  }
+  .block3 .benefit .dis {
+    margin-top: 2.2222222222vw;
+    font-size: 3.8888888889vw;
+  }
+  .block3 .showcase {
+    padding-top: 0px;
+  }
+  .block3 #showcase {
+    padding-top: 72.2222222222vw;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .block3 #showcase .btns {
+    display: block !important;
+  }
+  .block3 #showcase .btns .btn {
+    width: 11.1111111111vw;
+    height: 11.1111111111vw;
+    cursor: pointer;
+  }
+  .block3 .carousel {
+    padding: 0px;
+    padding-top: 6.6666666667vw;
+  }
+  .block3 .carousel .btn {
+    display: none;
+  }
+  .block3 .carousel .imgs {
+    width: 91.1111111111vw;
+  }
+  .block3 .carousel .imgs img {
+    width: 43.3333333333vw;
+    height: 43.3333333333vw;
+    border-radius: 3.3333333333vw;
+  }
+  .block3 .carousel .imgs img:nth-child(3) {
+    display: none;
+  }
+}
+.block4 {
+  background-image: url("../img/fone4.jpg");
+  background-size: cover;
+  height: 119.3055555556vw;
+}
+.block4 #roadMap {
+  padding-top: 2.5vw;
+  position: absolute;
+}
+.block4 .box {
+  background: #413B54;
+  border-radius: 1.8055555556vw;
+  padding: 2.5vw 3.0555555556vw;
+  width: 30.4166666667vw;
+  position: absolute;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 1.6666666667vw;
+  font-height: 125%;
+}
+.block4 .box1 {
+  left: 10.9722222222vw;
+  margin-top: 13.5416666667vw;
+}
+.block4 .box2 {
+  left: 57.6388888889vw;
+  margin-top: 24.2361111111vw;
+}
+.block4 .box3 {
+  left: 10.9722222222vw;
+  margin-top: 41.8055555556vw;
+}
+.block4 .box4 {
+  left: 57.6388888889vw;
+  margin-top: 48.0555555556vw;
+}
+.block4 .box5 {
+  left: 10.9722222222vw;
+  margin-top: 78.75vw;
+}
+.block4 .box6 {
+  left: 57.6388888889vw;
+  margin-top: 100.9027777778vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .block4 {
+    background-image: url("../img/fone4m.jpg");
+    height: 245.2777777778vw;
+  }
+  .block4 #roadMap {
+    padding-top: 5.5555555556vw;
+    position: static;
+  }
+  .block4 .box {
+    background: #413B54;
+    border-radius: 2.7777777778vw;
+    margin-left: 4.4444444444vw;
+    padding: 3.3333333333vw 4.1666666667vw 6.6666666667vw 5.2777777778vw;
+    width: 64.1666666667vw;
+    position: static;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    margin-top: 4.4444444444vw !important;
+    font-size: 3.8888888889vw;
+    font-height: 125%;
+  }
+}
+.block5 {
+  background-image: url("../img/fone5.jpg");
+  background-size: cover;
+  height: 81.1111111111vw;
+}
+.block5 #ourteam {
+  padding-top: 2.2222222222vw;
+}
+.block5 .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 4.1666666667vw;
+}
+.block5 .card {
+  background: #413B54;
+  border-radius: 1.6666666667vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin-left: 1.6666666667vw;
+  padding: 1.3888888889vw 1.1111111111vw;
+}
+.block5 .card:nth-child(1) {
+  margin-left: 0px;
+}
+.block5 .card:nth-child(4) {
+  margin-left: 0px;
+  margin-top: 2.5vw;
+}
+.block5 .card:nth-child(5) {
+  margin-top: 2.5vw;
+}
+.block5 .card img {
+  width: 22.7777777778vw;
+  height: 24.5138888889vw;
+  border-radius: 1.8055555556vw;
+}
+.block5 .card .text1 {
+  font-size: 1.3888888889vw;
+  margin-top: 1.1111111111vw;
+}
+.block5 .card .text2 {
+  margin-top: 0.2777777778vw;
+  font-weight: 600;
+  font-size: 1.6666666667vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .block5 {
+    background-image: url("../img/fone5m.jpg");
+    height: 225vw;
+  }
+  .block5 #ourteam {
+    padding-top: 2.2222222222vw;
+  }
+  .block5 .cards {
+    margin-top: 2.2222222222vw;
+  }
+  .block5 .card {
+    border-radius: 3.3333333333vw;
+    margin-left: 0px;
+    margin-top: 4.4444444444vw;
+    padding: 2.2222222222vw 1.9444444444vw 5.5555555556vw 1.9444444444vw;
+  }
+  .block5 .card:nth-child(2n) {
+    margin-left: 4.4444444444vw;
+  }
+  .block5 .card img {
+    width: 39.4444444444vw;
+    height: 42.2222222222vw;
+    border-radius: 3.0555555556vw;
+  }
+  .block5 .card .text1 {
+    font-size: 3.3333333333vw;
+    margin-top: 3.3333333333vw;
+  }
+  .block5 .card .text2 {
+    margin-top: 1.1111111111vw;
+    font-size: 3.8888888889vw;
+  }
+}
+.block6 {
+  background-image: url("../img/fone6.jpg");
+  background-size: cover;
+  height: 64.5833333333vw;
+}
+.block6 #FAQ {
+  padding-top: 2.7777777778vw;
+}
+.block6 .open {
+  content: url("../img/close.png");
+}
+.block6 .cards {
+  margin-top: 2.7777777778vw;
+}
+.block6 .card {
+  margin-top: 2.0833333333vw;
+  background: #423B54;
+  border-radius: 1.8055555556vw;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 2.3611111111vw 1.9444444444vw 2.3611111111vw 2.5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.block6 .card:nth-child(1) {
+  margin-top: 0px;
+}
+.block6 .card .quest {
+  font-size: 1.9444444444vw;
+  font-weight: 600;
+  line-height: 2.2222222222vw;
+}
+.block6 .card .ans {
+  top: 0;
+  -webkit-transition: down 0.2s linear;
+  transition: down 0.2s linear;
+  margin-top: 1.8055555556vw;
+  font-size: 1.9444444444vw;
+}
+.block6 .card img {
+  width: 3.0555555556vw;
+  height: 3.0555555556vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .block6 {
+    background-image: url("../img/fone6m.jpg");
+    height: 130.5555555556vw;
+  }
+  .block6 #FAQ {
+    padding-top: 5.5555555556vw;
+  }
+  .block6 .cards {
+    margin-top: 3.8888888889vw;
+  }
+  .block6 .card {
+    margin-top: 4.4444444444vw;
+    border-radius: 1.8055555556vw;
+    padding: 2.2222222222vw 1.3888888889vw 2.7777777778vw 2.2222222222vw;
+  }
+  .block6 .card:nth-child(1) {
+    margin-top: 0px;
+  }
+  .block6 .card .quest {
+    font-size: 4.1666666667vw;
+    width: 69.4444444444vw;
+    line-height: 5.5555555556vw;
+  }
+  .block6 .card .ans {
+    top: 0;
+    margin-top: 2.7777777778vw;
+    font-size: 4.4444444444vw;
+  }
+  .block6 .card img {
+    width: 6.6666666667vw;
+    height: 6.6666666667vw;
+  }
+}
+.block7 {
+  background-image: url("../img/fone7.jpg");
+  background-size: cover;
+  height: 64.5833333333vw;
+  -webkit-transition: 2s;
+  transition: 2s;
+}
+.block7 .text {
+  text-align: center;
+  padding-top: 29.7916666667vw;
+  font-weight: 600;
+  font-size: 4.5833333333vw;
+}
+.block7 .end {
+  margin-top: 25.3472222222vw;
+  font-weight: 600;
+  font-size: 1.9444444444vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .block7 {
+    background-image: url("../img/fone7m.jpg");
+    height: 64.5vw;
+  }
+  .block7 .text {
+    padding-top: 28.3333333333vw;
+    font-size: 6.6666666667vw;
+  }
+  .block7 .end {
+    margin-top: 20.2777777778vw;
+    font-size: 3.3333333333vw;
+  }
+}

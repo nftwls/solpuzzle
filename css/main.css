@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Nunito:wght@400;600&display=swap");
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html, body {
+  overflow: hidden;
+  overflow-y: auto;
+}
+
+body::-webkit-scrollbar {
+  -webkit-appearance: none;
+  display: none;
+}
+
+body {
+  position: relative;
+  font-family: Montserrat;
+  font-weight: normal;
+  font-size: 1.6667vw;
+  overflow-x: hidden;
+  color: white;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.between {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.around {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+}
+
+.center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.acenter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.title {
+  font-weight: 600;
+  font-size: 3.3333333333vw;
+}
+
+img {
+  user-drag: none;
+}
+
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 4.4444444444vw;
+  }
+
+  .title {
+    font-size: 6.6666666667vw;
+  }
+}

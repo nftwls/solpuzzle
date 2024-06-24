@@ -1,0 +1,101 @@
+$template_width:1440;
+@function vw($n) {
+  @return $n * 100vw / $template_width;
+}
+$template_mobile_width:360;
+@function vwm($n) {
+  @return $n * 100vw / $template_mobile_width;
+}
+.block2{
+  background-image: url("../img/fone2.jpg");
+  background-size: cover;
+  height: vw(1051);
+  .coming{
+    padding-top: vw(90);
+    img{
+      width: vw(300);
+    }
+  }
+  .timer{
+    margin-top: vw(36);
+    width: vw(636);
+    text-align: center;
+    .box{
+      border-radius: vw(40);
+      background-color:#413B54;
+      width: vw(132);
+      height: vw(132);
+      padding-top: vw(25);
+      box-sizing: border-box;
+      vertical-align: middle;
+      font:{
+        family: Nunito;
+        weight: 600;
+        size: vw(66);
+      }
+    }
+    .desc{
+      margin-top: vw(10);
+      font:{
+        size:vw(24);
+        weight: 400;
+      }
+      line-height: vw(30);
+    }
+  }
+  .text{
+    text-align: center;
+    font:{
+      size: vw(28);
+      weight: 600;
+    }
+  }
+  .text1{
+    margin-top: vw(80);
+  }
+  .text2{
+    margin-top: vw(36);
+  }
+}
+@media only screen and  (max-width: 600px) {
+  .block2{
+    background-image: url("../img/fone2m.jpg");
+    height: vwm(530);
+    .coming{
+      padding-top: vwm(25);
+      img{
+        width: vwm(120);
+      }
+    }
+    .timer{
+      margin-top: vwm(18);
+      width: vwm(250);
+      .box{
+        border-radius: vwm(11);
+        width: vwm(48);
+        height: vwm(48);
+        padding-top: vwm(10);
+        font-size: vwm(28);
+      }
+      .desc{
+        margin-top: vwm(8);
+        font-size:vwm(14);
+        line-height: 125%;
+      }
+      &>div{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+    .text{
+      font-size: vwm(16);
+    }
+    .text1{
+      margin-top: vwm(47);
+    }
+    .text2{
+      margin-top: vwm(16);
+    }
+  }
+}

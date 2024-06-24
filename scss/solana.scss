@@ -1,0 +1,201 @@
+$template_width:1440;
+@function vw($n) {
+    @return $n * 100vw / $template_width;
+}
+$template_mobile_width:360;
+@function vwm($n) {
+    @return $n * 100vw / $template_mobile_width;
+}
+.block1{
+    background-image: url("../img/fone1.jpg");
+    background-size: cover;
+    height: 62.5vw;
+}
+.container{
+    margin: 0px auto;
+    width: vw(1128);
+}
+nav{
+    padding-top: vw(20);
+    .nav-link{
+        text-decoration: none;
+        color: white;
+    }
+    .icon{
+        width: vw(40);
+    }
+    .name{
+        margin-left: vw(12);
+        font-size: vw(24);
+    }
+    .contact img{
+        width: vw(40);
+    }
+    .hrefs{
+        height: vw(40);
+        width: vw(592);
+        font:{
+            weight: 500;
+            size: vw(20);
+        }
+    }
+    .ic1{
+        margin-right: vw(20);
+    }
+}
+@keyframes opacity{
+    0% {
+        filter: opacity(0);
+    }
+
+    50% {
+        filter: opacity(1);
+    }
+    90% {
+        filter: opacity(0);
+    }
+    100% {
+        filter: opacity(0);
+    }
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform:rotate(360deg);
+    }
+}
+@mixin anim{
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    position: absolute;
+    animation-delay: 0.35s;
+}
+.circle{
+    width:vw(724);
+    animation-name: rotate, opacity;
+    pointer-events: none;
+    @include anim;
+}
+.sneakPic{
+    width: vw(358);
+    border-radius: vw(24);
+    animation-name: opacity;
+    margin: {
+        top:vw(180);
+        left:vw(190);
+    };
+    @include anim;
+}
+.about{
+    margin-top: vw(200);
+    color: white;
+    .bl1{
+        width: vw(520);
+        font:{
+            weight: 600;
+            size: vw(66);
+        }
+        line-height: vw(72);
+    }
+    .bl2{
+        width: vw(470);
+        margin-top: vw(24);
+        font-size: vw(28);
+        line-height: vw(32);
+    }
+    .bl3{
+        margin-top: vw(44);
+        .dis{
+            width: vw(264);
+            content: url("../img/discord.png");
+            &:hover{
+                content: url("../img/discordH.png");
+            }
+        }
+        .tw{
+            width: vw(64);
+            content: url("../img/twiter.png");
+            margin-left:vw(24);
+            &:hover{
+                content: url("../img/twiterH.png");
+            }
+        }
+    }
+}
+@media only screen and  (max-width: 600px){
+    .block1{
+        background-image: url("../img/fone1m.jpg");
+        height: vwm(805);
+        nav{
+            padding-top: vwm(10);
+            .icon{width: vwm(32);}
+            .name{margin-left: vwm(10);}
+            .contact img{width: vwm(24);}
+            .hrefs{display: none;}
+            .ic1{margin-right: vwm(4);}
+        }
+        .name{font-size:vwm(16);}
+        .circle{
+            width:vwm(320);
+        }
+        .sneakPic{
+            width: vwm(160);
+            border-radius: vwm(11);
+            margin: {
+                top:vwm(80);
+                left:vwm(80);
+            };
+        }
+        .disp{display: block !important;}
+        .show{margin-top: vwm(57);}
+        .about{
+            margin-top: vwm(68);
+            color: white;
+            .bl1{
+                width: inherit;
+                text-align: center;
+                font:{
+                    size: vwm(42);
+                }
+                line-height: vwm(44);
+            }
+            .bl2{
+                width: inherit;
+                text-align: center;
+                margin-top: vwm(16);
+                font-size: vwm(20.4);
+                line-height: vwm(22);
+            }
+            .bl3{
+                margin-top: vwm(47);
+                justify-content: center;
+                display: flex;
+                .dis{
+                    width: vwm(112);
+                    content: url("../img/discordm.png");
+                }
+                .tw{
+                    width: vwm(36);
+                    content: url("../img/twiterm.png");
+                    margin-left:vwm(12);
+                }
+            }
+        }
+    }
+    .container{
+        margin: 0px auto;
+        width: vwm(328);
+    }
+}
+@import "block2";
+@import "block3";
+@import "block4";
+@import "block5";
+@import "block6";
+@import "block7";
